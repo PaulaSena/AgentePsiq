@@ -21,29 +21,50 @@ source nome_do_ambiente/bin/activate
 
 Instale o Django no ambiente virtual usando o comando 
 
-```pip install django```
+```
+python3 -m ensurepip --upgrade
+python3 -m pip install --upgrade pip
+
+```
+
+```
+pip install django
+django-admin --version
+```
 
 em caso de erro pip
 
-```python3 -m ensurepip --upgrade```
+```
+python3 -m ensurepip --upgrade
+```
 
 ou 
-```python3 -m pip install --upgrade pip```
+```
+python3 -m pip install --upgrade pip
+```
 
 Verifique se o Django foi instalado corretamente 
 
 executando 
 
-```django-admin --version```
+```
+django-admin --version
+```
 
 Crie um novo projeto Django com o comando 
 
-```django-admin startproject nome_do_projeto```
+```
+django-admin startproject nome_do_projeto
+```
 
 Navegue até o diretório do projeto com 
 
-```cd nome_do_projeto```
+```
+cd nome_do_projeto
+```
 
 e inicie o servidor de desenvolvimento com 
 
-```python manage.py runserver```
+```
+python manage.py runserver
+```
