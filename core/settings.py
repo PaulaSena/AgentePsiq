@@ -131,3 +131,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+from django.contrib.messages import constants
+
+MESSAGE_TAGS = {
+    constants.SUCCESS: 'bg-green-50 text-green-700',
+    constants.ERROR: 'bg-red-50 text-red-700'
+}
