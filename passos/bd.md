@@ -51,5 +51,15 @@ python manage.py runserver
 python3 manage.py runserver
 
 ```
-http://127.0.0.1:8000/
-/admin
+
+- Painel exemplo
+
+    ```bash
+        👉 http://127.0.0.1:8000/admin/
+        Usuário: paulatestelogin
+        Senha: paulatestelogin
+        Página de cadastro:
+        👉 http://127.0.0.1:8000/usuarios/cadastro/
+        Página de login:
+        👉 http://127.0.0.1:8000/usuarios/login/
+        ```

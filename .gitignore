@@ -214,3 +214,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#passos/adm.md
+passos/adm.md
+passos/deploy.md
+
+.
