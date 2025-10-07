@@ -30,3 +30,28 @@ def cadastro(request):
         )
 
         return redirect('login')
+    
+    # cadastro de paciente
+from .models import Pacientes
+
+def pacientes(request):
+    if request.method == "GET":
+        pacientes = Pacientes.objects.all()
+        return render(request, 'pacientes.html', {'pacientes': pacientes})
+    elif request.method == "POST":
+        foto = request.FILES.get('foto')
+        nome = request.POST.get('nome')
+        descricao = request.POST.get('descricao')
+
+        paciente = Pacientes(
+            foto=foto,
+            nome=nome,
+            descricao=descricao,
+        )
+
+        paciente.save()
+
+        return redirect('pacientes')
+    
+    
+    
